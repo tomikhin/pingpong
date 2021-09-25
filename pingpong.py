@@ -20,8 +20,11 @@ def game():
         for e in event.get():
             if e.type == QUIT:
                 run = False
+        window.fill(back)
         racket1.reset()       
         racket2.reset()
+        racket2.update_r()
+        racket1.update_l()
         display.update()
         clock.tick(FPS)
 
