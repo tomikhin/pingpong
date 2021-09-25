@@ -1,7 +1,7 @@
 from pygame import*
 class GameSprite(sprite.Sprite): 
 #конструктор класса 
-    def __init__(self, player_image, player_x, player_y, size_x, size_y, player_speed, width, height, window): 
+    def __init__(self, player_image, player_x, player_y, player_speed, size_x, size_y, width, height, window): 
         super().__init__()
         self.window = window
         self.win_width = width
